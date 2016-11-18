@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>homework</title>
+    <link rel="stylesheet" type="text/css" href="xiao.css">
+</head>
+<body>
+    <tr class="first" id="screen">
+        <input id="out" type="text" value="">
+    </tr>
+    <div class="botton">
+        <button onclick="function1()">left-in</button>
+        <button onclick="function2()">right-in</button>
+        <button onclick="function3()">left-out</button>
+        <button onclick="function4()">right-out</button>
+    </div>
+    <div id="FA">
+        <div id="print" >10</div>
+        <div id="print" >3</div>
+        <div id="print" >7</div>
+        <div id="print" >11</div>
+        <div id="print" >12</div>
+        <div id="print" >30</div>
+    </div>
+    
+
+</body>
+</html>
+<script type="text/javascript">
+    function function1() {
+        var input = document.getElementById("out");
+        var a = input.value;
+        var b = [,10,3,7,11,12,30];
+            console.log(a.concat(b));
+    }
+    function function2() {
+        var input = document.getElementById("out");
+        var arr2 = input.value;
+        var arr = [10,3,7,11,12,30];
+            console.log(arr.concat(arr2));
+    }
+    function function3() {
+        var arr = [10,3,7,11,12,30];
+            arr = [10,3,7,11,12,30]
+            arr.shift("10");
+            console.log(arr)
+    }
+    function function4() {
+        var arr = [10,3,7,11,12,30];
+            arr = [10,3,7,11,12,30]
+            arr.pop("30");
+                console.log(arr)
+    }
+</script>
